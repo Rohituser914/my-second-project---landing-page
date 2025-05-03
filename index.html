@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="WE ARE CREATIVE LOGO.png" alt="logo">
+        </div>
+        <div class="navlist">
+            <a href="#">HOME</a>
+            <a href="#">BLOG</a>
+            <a href="#">PAGE</a>
+            <a href="#">SERVICE</a>
+            <a href="#">CONTACT</a>
+            <a href="#">BUY NOW</a>
+        </div>
+    </header>
+    <main>
+        <section class="one">
+            <div class="first-container">
+                <h2>WE ARE CREATIVE</h2>
+                <br>
+                <h1>CREATIVE DIGITAL AGANCY</h1>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem alias molestiae ipsa doloribus mollitia necessitatibus eius facere atque iure quasi obcaecati, dolorem nemo eaque! Voluptatum quod necessitatibus aut veritatis quasi hic nobis blanditiis numquam sed, accusantium qui non expedita illum voluptatibus modi enim autem quos doloribus quisquam tempora, magni, quo ipsum? Vel, quis sint quos assumenda facilis velit incidunt dolorem recusandae nesciunt rem iste totam inventore soluta autem corrupti reprehenderit esse minus ex itaque similique cupiditate doloribus! Eos, nisi alias! Blanditiis soluta minus quia accusantium porro labore autem reiciendis cum laborum perspiciatis voluptates corporis, dolorem iste, quaerat ex nesciunt totam.</p>
+                <br>
+                <button>READ MORE</button>
+                <button>REQUIRE A CONSOLE</button>
+                <br>
+            </div>
+            <div class="second-container">
+                <div id="bone">
+                    <h2>LAUNCH BUSINESS</h2>
+                    <br>
+                    <img src="launch business.jpeg" alt="launch business image" width="30%">
+                    <br>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, cupiditate.</P>
+                </div>
+                <div id="btwo">
+                    <H2> ONLINE SUPPORT TEAM</H2>
+                    <br>
+                    <img src="online support team.webp" alt="team work" width="30%">
+                    <br>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, fugiat.</P>
+                </div>
+                <div id="bthree">
+                    <h2>THE MANAGEMENT</h2>
+                    <br>
+                    <img src="management.avif" alt="management" width="30%">
+                    <br>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quidem!</P>
+                </div>
+            </div>
+        </section>
+        <section class="two">
+            <div class="fourth-container">
+                <h1>ABOUT US</h1>
+                <br>
+                <h3>15 year we passionate about achieving better result for our clients</h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente reprehenderit laboriosam eaque explicabo provident vitae, necessitatibus exercitationem expedita laborum eum, animi rerum pariatur perspiciatis sequi, atque omnis molestiae. Eligendi quam ipsum eaque nesciunt dignissimos, doloremque ducimus. Rem odit quo obcaecati odio quidem necessitatibus inventore exercitationem aliquam voluptatem corrupti, ipsam deleniti, explicabo dolores debitis delectus vel enim nostrum eligendi itaque aut hic? Ut asperiores adipisci laboriosam veniam itaque ullam doloribus a in veritatis, non aliquid exercitationem quod ratione dolorum qui? Nemo ea magnam consequatur voluptas quaerat voluptatibus, vitae blanditiis. Exercitationem, sed quidem minus fugit aspernatur quaerat totam eum similique vel iste!</p>
+                <br>
+                <img src="two person metting.png" alt="two person">
+                <br>
+                <button>READ MORE</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <p> @wearecreative_agency, +91_1800-1200-00 ,www.wearecreativeagency.com </p>
+        </div>
+    </footer>
+    <script>
+        // Scroll to Top Button functionality
+        const scrollToTopButton = document.getElementById('scroll-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Button click event listeners
+        document.getElementById('read-more-btn').addEventListener('click', () => {
+            alert('You clicked READ MORE in the main section.');
+        });
+
+        document.getElementById('require-console-btn').addEventListener('click', () => {
+            console.log('Console required button clicked.');
+        });
+
+        document.getElementById('read-more-about-us-btn').addEventListener('click', () => {
+            alert('You clicked READ MORE in the ABOUT US section.');
+        });
+    </script>
+</body>
+</html>
